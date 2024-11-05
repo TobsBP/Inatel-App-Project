@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inatel</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="titulo-principal">
+                <h1>Bem vindo!</h1>
+                <img src="../IMG/Logo.png" class="logo">
+            </div>
+            <hr>
+            <div class="menu-aulas">
+                <span class="material-symbols-outlined">tv</span>
+                <h3> Notícias</h3>
+            </div>
+
+            <div class="body-slider">
+                <div class="slider">
+                    <div class="slides">
+                        <div class="slide">
+                            <h2>
+                                <p>Parceria com empresas privadas vira solução para desenvolvimento de pesquisas em instituição de MG. 
+                                Com parcerias e abertura de laboratórios, Inatel já soma 128 novas contratações nos últimos dois anos.</p>
+                            </h2>
+                            <img src="../IMG/Logo.png" alt="Imagem 1" width="300px">
+                        </div>
+                        <div class="slide">
+                            <h2>Texto 2</h2>
+                            <img src="https://via.placeholder.com/200/33FF57/FFFFFF?text=Imagem+2" alt="Imagem 2">
+                        </div>
+                        <div class="slide">
+                            <h2>Texto 3</h2>
+                            <img src="https://via.placeholder.com/200/3357FF/FFFFFF?text=Imagem+3" alt="Imagem 3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="grid">
+            <div class="aulas"> 
+                <div class="menu-aulas">
+                    <span class="material-symbols-outlined">menu_book</span>
+                    <h3> Aulas</h3>
+                </div>
+                <ul>
+                    <div class="check-box-group">
+                        <label class="custom-checkbox" tab-index="0" aria-label="Checkbox Label">
+                          <input type="checkbox" checked>
+                          <span class="checkmark"></span>
+                          <span class="label">M05 - C / 15:30 / Sala I-6</span>
+                        </label>
+                      
+                        <label class="custom-checkbox" tab-index="0" aria-label="Another Label">
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                          <span class="label">F01 - D / 15:30 / Sala I-6</span>
+                        </label>
+
+                        <label class="custom-checkbox" tab-index="0" aria-label="Another Label">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            <span class="label">F05 - A / 15:30 / Sala I-6</span>
+                          </label>
+
+                          <label class="custom-checkbox" tab-index="0" aria-label="Another Label">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            <span class="label">J02 - B / 15:30 / Sala I-6</span>
+                          </label>
+                      </div>
+            </div>
+
+            <div class="notas">
+                <div class="menu-aulas">
+                    <span class="material-symbols-outlined">description</span>
+                    <h3>Notas</h3>
+                </div>
+                
+                <canvas id="gradesChart"></canvas>
+
+                <button>Solicitar Revisão</button>
+            </div>
+
+            <div class="frequencia">
+                <div class="menu-aulas">
+                    <span class="material-symbols-outlined">heart_plus</span>
+                    <h3>Frequência</h3>
+                </div>
+                <table>
+                    <tr>
+                        <th>Matéria</th>
+                        <th>Faltas Limite</th>
+                        <th>Faltas</th>
+                    </tr>
+                    <tr>
+                        <td>CO6</td>
+                        <td>20</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td>CO6</td>
+                        <td>20</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td>CO6</td>
+                        <td>20</td>
+                        <td>12</td>
+                    </tr>
+                </table>
+                <button>Enviar Atestado</button>
+            </div>
+
+            <div class="atividades">
+                <div class="menu-aulas">
+                    <span class="material-symbols-outlined">fact_check</span>
+                    <h3>Atividades C.</h3>
+                </div>
+                    <table>
+                    <tr>
+                        <th>Tipos</th>
+                        <th>Peso</th>
+                        <th>Possui</th>
+                    </tr>
+                    <tr>
+                        <td>A1</td>
+                        <td>20</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td>A2</td>
+                        <td>20</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td>NEMP</td>
+                        <td>20</td>
+                        <td>12</td>
+                    </tr>
+                </table>
+                <button>Enviar Comprovante</button>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <ul class="footer-menu">
+            <span class="material-symbols-outlined">home</span>
+            <a href="index.html"><h3>Home</h3></a>
+            <span class="material-symbols-outlined">notifications</span>
+            <a href="notifications.html"><h3>Lembretes</h3></a>
+            <span class="material-symbols-outlined">settings</span>
+            <a href="index.html"><h3>Settings</h3></a>
+            <span class="material-symbols-outlined">person</span>
+            <a href="index.html"><h3>Contato</h3></a>
+        </ul>
+    </footer>
+
+    <script src="../JS/main.js"></script>
+</body>
+</html>
