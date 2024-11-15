@@ -19,7 +19,7 @@ h1, h2, h3 {
     background-color: #e0f2ff; 
     margin: 0 auto;
     padding: 20px;
-    width: 80%;
+    width: 100%;
 }
 
 header {
@@ -39,6 +39,12 @@ header {
     border-radius: 5px;
 }
 
+@media (max-width: 600px) {
+    .slide {
+        font-size: 10px;
+    }
+}
+
 .noticias > img {
     margin-right: 10px;
     width: 100px;
@@ -46,16 +52,46 @@ header {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-}
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  @media (max-width: 1024px) {
+    /* For tablets and small laptops */
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    /* For phones */
+    .grid {
+      grid-template-columns: 1fr;
+      gap: 10px; /* Adjust gap for smaller screens */
+    }
+  }
+  
+  
 
 .aulas, .notas, .frequencia, .atividades {
+    width: 100%;
     background-color: #fff;
     border: 1px solid #ddd;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 1024px) {
+    .aulas, .notas, .frequencia, .atividades {
+        width: auto;
+    }    
+}
+
+@media (max-width: 600px) {
+    .aulas, .notas, .frequencia, .atividades {
+        width: 450px;
+    }
 }
 
 h3 {
@@ -104,6 +140,23 @@ input[type="text"] {
 .logo {
     margin-left: auto;
     width: 100px;
+}
+
+.logo-inatel-noticias {
+    margin-left: auto;
+    width: 100%;
+}
+
+@media (max-width: 1024px) {
+    .logo-inatel-noticias {
+        width: 80%;
+    }
+}
+
+@media (max-width: 600px) {
+    .logo-inatel-noticias {
+        width: 150px;
+    }
 }
 
 .material-symbols-outlined {
@@ -222,6 +275,7 @@ canvas {
 
 img {
     max-width: 200px;
+    width: 100%;
     height: auto;
     margin-left: 20px;
     border-radius: 10px;
@@ -237,7 +291,7 @@ footer {
     text-align: center;
     margin: 0 auto;
     padding: 20px;
-    width: 80%;
+    width: 100%;
     border-radius: 10px;
 }
 
@@ -250,6 +304,7 @@ footer {
     display: flex;
     justify-content: center;
     gap: 15px;
+    width: 100%;
 }
 
 .footer-menu li {
